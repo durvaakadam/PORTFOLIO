@@ -4,6 +4,7 @@ import { FolderOpen, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { AOS } from "aos"
 
 export const projects = [
   {
@@ -43,7 +44,7 @@ export function Projects() {
   const featuredProjects = projects.slice(0, 2)
   
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-20 px-4" data-aos="fade-up">
       <div className="max-w-6xl mx-auto">
         {/* Selected Projects Header */}
         <div className="flex items-center gap-3 mb-2">

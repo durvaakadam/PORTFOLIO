@@ -4,7 +4,7 @@ import { MapPin, Layers } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center px-6 relative">
+    <section className="min-h-screen flex items-center px-6 relative" data-aos="fade-up">
       
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
 
@@ -96,7 +96,7 @@ FULL STACK DEVELOPER
               <p className="text-sm font-semibold tracking-wide">
                 FULL STACK DEV<span className="text-accent">,</span>
               </p>
-              <p className="text-xs text-muted-foreground">& DESIGNER</p>
+              <p className="text-xs text-muted-foreground">& SYSTEMS FOCUSED</p>
             </div>
           </div>
 

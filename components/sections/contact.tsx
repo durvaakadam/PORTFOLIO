@@ -2,10 +2,21 @@
 
 import { Mail, Phone, Github, Linkedin, Twitter, AtSign } from "lucide-react"
 import Link from "next/link"
+import { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 export function Contact() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: "ease-in-out", // Easing function for the animation
+      once: true, // Whether animation should happen only once
+    });
+  }, [])
+
   return (
-    <section id="contact" className="py-20 px-4">
+    <section id="contact" className="py-20 px-4" data-aos="fade-up">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
         <div className="w-24 h-1 bg-accent mx-auto mb-6" />

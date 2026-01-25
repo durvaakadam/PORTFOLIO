@@ -123,3 +123,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 100px; /* Adjusts the scroll offset for smoother experience */
+  scroll-snap-type: y proximity; /* Enables snapping for smoother scrolling */
+}
