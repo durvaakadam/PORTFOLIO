@@ -85,7 +85,7 @@ export function Navbar() {
               {mounted && (isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />)}
               <span className="sr-only">Toggle theme</span>
             </Button>
-            <Button size="sm" variant="outline" className="rounded-full bg-transparent" asChild>
+            <Button size="sm" variant="outline" className="rounded-full bg-transparent hover:text-white" asChild>
               <Link href="#contact">Contact Me</Link>
             </Button>
           </div>
@@ -125,7 +125,7 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button size="sm" variant="outline" className="w-full rounded-full bg-transparent" asChild>
+            <Button size="sm" variant="outline" className="w-full rounded-full bg-transparent hover:text-white" asChild>
               <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
             </Button>
           </div>

@@ -46,12 +46,12 @@ export function Services() {
               {services.map((service) => (
                 <div 
                   key={service} 
-                  className="flex items-center gap-3 p-4 border border-border rounded-lg hover:border-accent/50 transition-colors"
+                  className="flex items-center gap-3 p-4 border border-border rounded-lg bg-secondary/70 hover:bg-secondary/85 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg group"
                 >
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-accent/10">
+                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-accent/40 group-hover:bg-accent/60 transition-colors duration-300">
                     <Check className="h-4 w-4 text-accent" />
                   </div>
-                  <span className="text-sm font-medium">{service}</span>
+                  <span className="text-sm font-medium group-hover:text-accent transition-colors duration-300">{service}</span>
                 </div>
               ))}
             </div>

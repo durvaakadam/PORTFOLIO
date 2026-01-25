@@ -48,14 +48,27 @@ export function About() {
           <div className="space-y-10">
             <div>
               <h3 className="text-2xl font-bold mb-6">My Journey</h3>
-              <ul className="space-y-4">
-                {journey.map((item, index) => (
-                  <li key={index} className="flex items-center gap-3 text-muted-foreground">
-                    <span className="w-2.5 h-2.5 bg-accent rounded-full flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+<ul className="space-y-0">
+{journey.map((item, index) => (
+  <li key={index} className="flex items-stretch gap-3 text-muted-foreground min-h-8">
+    {/* Dot + line column */}
+    <div className="flex flex-col items-center h-full relative">
+      {/* Full vertical line (except first and last) */}
+      {index !== 0 && (
+        <span className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-1/2 bg-accent/60" />
+      )}
+      {/* Dot */}
+      <span className="w-2.5 h-2.5 bg-accent rounded-full z-10" />
+      {/* Full vertical line (except last) */}
+      {index !== journey.length - 1 && (
+        <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-px h-1/2 bg-accent/60" />
+      )}
+    </div>
+    {/* Text */}
+    <span className="leading-relaxed">{item}</span>
+  </li>
+))}
+</ul>
             </div>
             
             <div>
@@ -64,7 +77,7 @@ export function About() {
                 {techStack.map((tech) => (
                   <span 
                     key={tech} 
-                    className="px-4 py-2 text-sm border border-border rounded-md text-foreground hover:border-accent transition-colors"
+                    className="px-4 py-2 text-sm border border-border rounded-md text-foreground bg-background/80 shadow-md hover:bg-background/50 transition-colors"
                   >
                     {tech}
                   </span>

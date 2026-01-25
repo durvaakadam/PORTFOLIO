@@ -18,7 +18,7 @@ export default function CustomCursor() {
       className="pointer-events-none fixed top-0 left-0 z-[9999]"
       style={{
         transform: `translate(${pos.x - 12}px, ${pos.y - 12}px)`,
-        transition: 'transform 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+        transition: 'transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
       }}
     >
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,3 +38,4 @@ export default function CustomCursor() {
     </div>
   )
 }
+2

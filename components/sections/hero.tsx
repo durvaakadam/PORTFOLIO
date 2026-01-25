@@ -17,11 +17,42 @@ export function Hero() {
             KADAM
           </h1>
 
-          <div className="mt-6">
-            <span className="inline-block px-5 py-2 border border-accent text-accent rounded-full text-sm font-semibold tracking-wide">
-              FULL STACK DEVELOPER
-            </span>
-          </div>
+{/* <div className="mt-6 inline-flex items-center">
+<span
+className="
+inline-flex items-center
+px-6 py-2.5
+rounded-full
+bg-emerald-500/10
+border border-emerald-500/30
+text-sm font-semibold
+tracking-wide
+text-emerald-400
+shadow-sm
+"
+>
+FULL STACK DEVELOPER
+</span>
+</div> */}
+
+<div className="mt-8 flex items-center gap-4">
+  {/* Accent line */}
+  <div className="h-px w-16 bg-emerald-500/60" />
+
+  {/* Role with soft background */}
+  <span
+    className="
+      relative px-4 py-1.5
+      text-sm font-medium tracking-[0.3em] uppercase
+      text-emerald-400
+      bg-emerald-500/10
+      rounded-sm
+      backdrop-blur
+    "
+  >
+    Full Stack Developer
+  </span>
+</div>
         </div>
 
         {/* RIGHT — TAGLINE + LOCATION */}
@@ -74,3 +105,6 @@ export function Hero() {
     </section>
   )
 }
+
+
+
