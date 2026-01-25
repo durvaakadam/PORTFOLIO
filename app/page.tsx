@@ -6,6 +6,7 @@ import { Experience } from "@/components/sections/experience"
 import { Projects } from "@/components/sections/projects"
 import { Contact } from "@/components/sections/contact"
 import { Footer } from "@/components/footer"
+import GitHub from "@/components/sections/github"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Services />
         <Experience />
         <Projects />
+        <GitHub />
         <Contact />
       </main>
       <Footer />

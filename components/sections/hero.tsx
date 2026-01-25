@@ -1,6 +1,7 @@
 "use client"
 
-import { MapPin, Layers } from "lucide-react"
+import { MapPin, Layers, Github, Linkedin, Mail } from "lucide-react"
+import { SiLeetcode, SiWhatsapp } from "react-icons/si"
 
 export function Hero() {
   return (
@@ -52,6 +53,30 @@ FULL STACK DEVELOPER
   >
     Full Stack Developer
   </span>
+</div>
+
+{/* Social Icons - centered and spaced below badge */}
+<div className="flex justify-start mt-4 gap-4">
+  <a href="https://www.linkedin.com/in/durva-kadam-02a22a25a/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent hover:scale-125 transition-all duration-300">
+    <Linkedin className="h-6 w-6" />
+    <span className="sr-only">LinkedIn</span>
+  </a>
+  <a href="https://github.com/durvaakadam" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent hover:scale-125 transition-all duration-300">
+    <Github className="h-6 w-6" />
+    <span className="sr-only">GitHub</span>
+  </a>
+  <a href="https://leetcode.com/u/v5S4HTYapf/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent hover:scale-125 transition-all duration-300">
+    <SiLeetcode className="h-6 w-6" />
+    <span className="sr-only">LeetCode</span>
+  </a>
+  <a href="https://api.whatsapp.com/send/?phone=918828174914&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-green-500 hover:scale-125 transition-all duration-300">
+    <SiWhatsapp className="h-6 w-6" />
+    <span className="sr-only">WhatsApp</span>
+  </a>
+  <a href="mailto:durvakadam204@gmail.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent hover:scale-125 transition-all duration-300">
+    <Mail className="h-6 w-6" />
+    <span className="sr-only">Email</span>
+  </a>
 </div>
         </div>
 

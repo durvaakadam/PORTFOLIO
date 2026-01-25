@@ -1,6 +1,7 @@
 "use client"
 
-import { Mail, Phone, Github, Linkedin, Twitter, AtSign } from "lucide-react"
+import { Mail, Phone, Github, Linkedin, AtSign } from "lucide-react"
+import { SiLeetcode, SiWhatsapp } from "react-icons/si"
 import Link from "next/link"
 import { useEffect } from "react"
 import AOS from "aos"
@@ -24,24 +25,26 @@ export function Contact() {
           I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {/* Email Card */}
-          <Link
-            href="mailto:durvakadam@gmail.com"
-            className="
-              p-8 rounded-xl bg-card
-              border border-border/50
-              flex flex-col items-center
-              transition-all duration-300
-              hover:-translate-y-2 hover:shadow-2xl hover:bg-card/80
-              active:scale-95
-              group
-            "
-          >
+            <Link
+              href="mailto:durvakadam@gmail.com"
+              className="
+                p-8 rounded-2xl
+                bg-white/90 dark:bg-card
+                border border-border/70
+                flex flex-col items-center
+                transition-all duration-300
+                shadow-md hover:shadow-2xl
+                hover:-translate-y-2 hover:bg-white dark:hover:bg-card/80
+                active:scale-95
+                group
+              "
+            >
             <div className="
               w-14 h-14 rounded-full
-              bg-accent/10
+              bg-accent/20 dark:bg-accent/10
               flex items-center justify-center mb-5
               transition-all duration-300
               group-hover:bg-accent/30 group-hover:scale-110
@@ -58,18 +61,20 @@ export function Contact() {
           <Link
             href="tel:+918828174914"
             className="
-              p-8 rounded-xl bg-card
-              border border-border/50
+              p-8 rounded-2xl
+              bg-white/90 dark:bg-card
+              border border-border/70
               flex flex-col items-center
               transition-all duration-300
-              hover:-translate-y-2 hover:shadow-2xl hover:bg-card/80
+              shadow-md hover:shadow-2xl
+              hover:-translate-y-2 hover:bg-white dark:hover:bg-card/80
               active:scale-95
               group
             "
           >
             <div className="
               w-14 h-14 rounded-full
-              bg-accent/10
+              bg-accent/20 dark:bg-accent/10
               flex items-center justify-center mb-5
               transition-all duration-300
               group-hover:bg-accent/30 group-hover:scale-110
@@ -85,11 +90,13 @@ export function Contact() {
           {/* Socials Card */}
           <div
             className="
-              p-8 rounded-xl bg-card
-              border border-border/50
+              p-8 rounded-2xl
+              bg-white/90 dark:bg-card
+              border border-border/70
               flex flex-col items-center
               transition-all duration-300
-              hover:-translate-y-2 hover:shadow-2xl hover:bg-card/80
+              shadow-md hover:shadow-2xl
+              hover:-translate-y-2 hover:bg-white dark:hover:bg-card/80
               sm:col-span-2 lg:col-span-1
               group
               cursor-pointer
@@ -97,7 +104,7 @@ export function Contact() {
           >
             <div className="
               w-14 h-14 rounded-full
-              bg-accent/10
+              bg-accent/20 dark:bg-accent/10
               flex items-center justify-center mb-5
               transition-all duration-300
               group-hover:bg-accent/30 group-hover:scale-110
@@ -109,7 +116,7 @@ export function Contact() {
 
             <div className="flex gap-5 justify-center">
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/durva-kadam-02a22a25a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent hover:scale-125 transition-all duration-300"
@@ -119,7 +126,7 @@ export function Contact() {
               </Link>
 
               <Link
-                href="https://github.com"
+                href="https://github.com/durvaakadam"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent hover:scale-125 transition-all duration-300"
@@ -129,13 +136,23 @@ export function Contact() {
               </Link>
 
               <Link
-                href="https://twitter.com"
+                href="https://leetcode.com/u/v5S4HTYapf/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-accent hover:scale-125 transition-all duration-300"
               >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+                <SiLeetcode className="h-5 w-5" />
+                <span className="sr-only">LeetCode</span>
+              </Link>
+
+              <Link
+                href="https://api.whatsapp.com/send/?phone=918828174914&text&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-green-500 hover:scale-125 transition-all duration-300"
+              >
+                <SiWhatsapp className="h-5 w-5" />
+                <span className="sr-only">WhatsApp</span>
               </Link>
             </div>
           </div>

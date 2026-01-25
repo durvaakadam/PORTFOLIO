@@ -1,16 +1,18 @@
 "use client"
 
-import { FolderOpen, ArrowRight } from "lucide-react"
+import { FolderOpen, ArrowRight, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { AOS } from "aos"
+import { SiLeetcode } from "react-icons/si"
 
 export const projects = [
   {
     title: "Scanalytics",
     subtitle: "AI-Powered Medical Analytics Platform (Mumbai Hacks GenAI Hackathon)",
     image: "/images/scanalytics.jpg",
+    link: "https://github.com/yourusername/scanalytics", // Add your real link here
     highlights: [
       "Built an end-to-end web platform that processes medical scans in real time and generates AI-assisted insights to support faster and more reliable clinical decision-making.",
       "Implemented modules for automated scan upload, AI-driven analysis, and intuitive result visualization, enabling doctors to view critical findings, risk flags, and patient history in a single dashboard.",
@@ -21,6 +23,7 @@ export const projects = [
     title: "FliqAI",
     subtitle: "AI-Powered College Admissions Playbooks",
     image: "/images/fliqai.jpg",
+    link: "https://github.com/yourusername/fliqai", // Add your real link here
     highlights: [
       "Built a web platform that analyzes patterns from successful college applications to generate personalized, step-by-step admissions roadmaps for each student.",
       "Implemented features for comparing a student's profile against past admits, highlighting gaps in academics, activities, and essays, and suggesting actionable improvements.",
@@ -31,6 +34,7 @@ export const projects = [
     title: "AXM",
     subtitle: "Client E-commerce Website",
     image: "/images/axm.jpg",
+    link: "https://github.com/yourusername/axm", // Add your real link here
     highlights: [
       "Developed a fully responsive e-commerce website for a client, enabling users to browse products, view details, and place orders through a streamlined, mobile-friendly interface.",
       "Implemented core commerce flows including product listing, filtering, cart management, and order flow, ensuring a smooth and intuitive shopping experience.",
@@ -78,7 +82,16 @@ export function Projects() {
               
               {/* Project Details */}
               <div className="flex-1 w-full">
-                <h3 className="text-2xl md:text-3xl font-bold mb-3">{project.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-3 flex items-center gap-2">
+                  {project.title}
+                  {project.link ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-7 w-7 text-green-500 hover:text-green-400 transition-colors" />
+                    </a>
+                  ) : (
+                    <ExternalLink className="h-7 w-7 text-green-500 opacity-60" />
+                  )}
+                </h3>
                 <p className="text-accent font-medium mb-6">{project.subtitle}</p>
                 <ul className="space-y-4">
                   {project.highlights.map((highlight, i) => (

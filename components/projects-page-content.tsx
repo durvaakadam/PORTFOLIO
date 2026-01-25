@@ -1,6 +1,6 @@
 "use client"
 
-import { FolderOpen, ArrowLeft } from "lucide-react"
+import { FolderOpen, ArrowLeft, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -50,7 +50,16 @@ export function ProjectsPageContent() {
               
               {/* Project Details */}
               <div className="flex-1 w-full">
-                <h2 className="text-2xl md:text-3xl font-bold mb-3">{project.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-3 flex items-center gap-2">
+                  {project.title}
+                  {project.link ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-7 w-7 text-green-500 hover:text-green-400 transition-colors" />
+                    </a>
+                  ) : (
+                    <ExternalLink className="h-7 w-7 text-green-500 opacity-60" />
+                  )}
+                </h2>
                 <p className="text-accent font-medium mb-6">{project.subtitle}</p>
                 <ul className="space-y-4">
                   {project.highlights.map((highlight, i) => (
