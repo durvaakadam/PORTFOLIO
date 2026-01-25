@@ -39,7 +39,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`font-sans antialiased cursor-none`}>
+      <body className={`font-sans antialiased cursor-none relative`}>
+        {/* Grid Background - Dark Mode */}
+        <div className="fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,rgba(255,255,255,.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,.07)_1px,transparent_1px)] bg-[size:6rem_4rem] pointer-events-none dark:block hidden" />
+        {/* Grid Background - Light Mode */}
+        <div className="fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,rgba(0,0,0,.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,.07)_1px,transparent_1px)] bg-[size:6rem_4rem] pointer-events-none dark:hidden" />
         <CustomCursor />
         {children}
         <Analytics />

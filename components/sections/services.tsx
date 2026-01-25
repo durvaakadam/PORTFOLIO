@@ -74,7 +74,7 @@ export function Services() {
                       src={tech.icon || "/placeholder.svg"}
                       alt={tech.name}
                       fill
-                      className="object-contain dark:filter dark:brightness-0 dark:invert dark:opacity-70 dark:group-hover:opacity-100 transition-opacity"
+                      className="object-contain dark:filter dark:brightness-200 dark:invert transition-all"
                     />
                   </div>
                 </div>

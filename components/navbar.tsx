@@ -86,7 +86,7 @@ export function Navbar() {
               <span className="sr-only">Toggle theme</span>
             </Button>
             <Button size="sm" variant="outline" className="rounded-full bg-transparent" asChild>
-              <Link href="#contact">Book a Call</Link>
+              <Link href="#contact">Contact Me</Link>
             </Button>
           </div>
         </div>
@@ -126,7 +126,7 @@ export function Navbar() {
               </Link>
             ))}
             <Button size="sm" variant="outline" className="w-full rounded-full bg-transparent" asChild>
-              <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Book a Call</Link>
+              <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
             </Button>
           </div>
         </div>
