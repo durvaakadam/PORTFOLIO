@@ -50,7 +50,10 @@ export function Navbar() {
 
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all ${isScrolled ? 'bg-background/80 shadow-md' : 'bg-transparent'}`} data-aos="fade-down"
+      className={`fixed top-0 left-0 w-full z-50 transition-all backdrop-blur-xl
+        ${isScrolled ? 'bg-white/80 dark:bg-black/40 shadow-md' : 'bg-white/60 dark:bg-black/20'}
+        border-b border-border
+      `} data-aos="fade-down"
     >
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo & Tagline */}
