@@ -4,12 +4,12 @@ import { Check, ChevronDown } from "lucide-react"
 import Image from "next/image"
 
 const services = [
-  "Web Development",
-  "UI/UX Design",
-  "Branding",
-  "Digital Marketing",
-  "E-commerce Solutions",
-  "Mobile App Development",
+  "Full-Stack Development",
+  "Frontend Engineering",
+  "Backend APIs & Databases",
+  "UI/UX Design & Prototyping",
+  "Performance & Optimization",
+  "Startup & MVP Development",
 ]
 
 const technologies = [
@@ -34,7 +34,7 @@ export function Services() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Services & Tech</h2>
           <div className="w-16 h-1 bg-accent mb-6" />
           <p className="text-muted-foreground max-w-2xl">
-            I craft digital experiences that inspire and engage. I build for clients who care about craft, performance, and user experience.
+            I design and build scalable, high-performance web applications from idea to production — with a strong focus on usability, performance, and clean architecture.
           </p>
         </div>
         

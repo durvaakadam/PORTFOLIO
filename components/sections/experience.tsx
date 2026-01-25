@@ -4,25 +4,17 @@ import { Briefcase } from "lucide-react"
 
 const experiences = [
   {
-    company: "Atrey.dev",
-    role: "Full-Stack Developer",
-    type: "Remote",
-    period: "Jan 2025 - Present",
+    company: "HumbleWalking",
+    role: "Backend Engineer · Internship",
+    type: "Mumbai, India",
+    period: "May 2025 – July 2025",
     highlights: [
-      "Delivered 5-7 full-stack web projects for Atrey.dev clients, covering landing pages, dashboards, and internal tools end to end",
-      "Built responsive frontends using React/Next.js and modern UI libraries, ensuring mobile-friendly layouts and consistent design implementation from Figma",
-      "Implemented and integrated REST/GraphQL APIs on Node.js/Express, handling database design and queries with MongoDB/PostgreSQL for production features"
-    ]
-  },
-  {
-    company: "Fliq AI",
-    role: "Frontend Developer",
-    type: "Remote",
-    period: "MAR-2025 - SEP-2025",
-    highlights: [
-      "Built responsive UI components for Fliq AI's web app using React, TypeScript, and Tailwind CSS, improving mobile usability and layout consistency",
-      "Collaborated with designers and backend engineers to implement new product flows, reducing UI bugs and handoff issues through clear Figma-to-code processes",
-      "Optimized page load and bundle size by refactoring components and cleaning unused styles, leading to faster navigation and smoother user experience"
+      "Built and optimized RESTful APIs using Node.js & Express, improving data retrieval performance by ~30%",
+      "Designed and implemented MongoDB schemas for user, appointment, and HR modules at production scale",
+      "Integrated JWT-based authentication and secure role-based access flows",
+      "Collaborated with frontend and product teams to ship reliable client-facing features",
+      "Owned backend development lifecycle — from API design to testing and integration",
+      "Tech used: Node.js · Express · MongoDB · JWT · REST APIs · Postman"
     ]
   }
 ]
@@ -42,7 +34,7 @@ export function Experience() {
         </p>
         
         {/* Work Experience Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-1 gap-6 w-full max-w-3xl">
           {experiences.map((exp, index) => (
             <div 
               key={index}
