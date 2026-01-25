@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       },
       {
         url: '/logo.png',
-        type: 'image/svg+xml',
+        type: 'image/png',
       },
     ],
     apple: '/logo.png',
