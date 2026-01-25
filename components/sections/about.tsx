@@ -51,10 +51,12 @@ export function About() {
             </p>
             
             <div className="flex items-center gap-8 pt-4">
-              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Download className="mr-2 h-4 w-4" />
-                Download CV
-              </Button>
+              <a href="/DURVA_KADAM.pdf" download target="_blank" rel="noopener noreferrer">
+                <Button className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download CV
+                </Button>
+              </a>
               <ChevronDown className="h-8 w-8 text-accent animate-bounce hidden lg:block" />
             </div>
           </div>

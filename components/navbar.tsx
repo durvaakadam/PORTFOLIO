@@ -12,6 +12,8 @@ const navLinks = [
   { name: "Blogs", href: "#blogs" },
 ]
 
+const resumeUrl = "https://drive.google.com/file/d/17XY932lmxK-1HiaCfk5xm0ka53czA6KI/view?usp=sharing";
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -86,6 +88,9 @@ export function Navbar() {
             <Button size="sm" variant="outline" className="rounded-full bg-transparent hover:text-white" asChild>
               <Link href="#contact">Contact Me</Link>
             </Button>
+            <Button size="sm" variant="default" className="rounded-full bg-accent text-white hover:bg-accent/80" asChild>
+              <a href={resumeUrl} target="_blank" rel="noopener noreferrer">View Resume</a>
+            </Button>
           </div>
         </div>
         
@@ -125,6 +130,9 @@ export function Navbar() {
             ))}
             <Button size="sm" variant="outline" className="w-full rounded-full bg-transparent hover:text-white" asChild>
               <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
+            </Button>
+            <Button size="sm" variant="default" className="w-full rounded-full bg-accent text-white hover:bg-accent/80" asChild>
+              <a href={resumeUrl} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>View Resume</a>
             </Button>
           </div>
         </div>

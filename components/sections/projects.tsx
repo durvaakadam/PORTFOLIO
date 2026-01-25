@@ -4,7 +4,9 @@ import { FolderOpen, ArrowRight, ExternalLink } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { AOS } from "aos"
+// import { AOS } from "aos"
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { SiLeetcode } from "react-icons/si"
 
 export const projects = [
