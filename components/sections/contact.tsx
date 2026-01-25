@@ -17,7 +17,7 @@ export function Contact() {
   }, [])
 
   return (
-    <section id="contact" className="py-20 px-4" data-aos="fade-up">
+    <section id="contact" className="py-10 px-4 mt-10 mb-0 pb-15" data-aos="fade-up">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
         <div className="w-24 h-1 bg-accent mx-auto mb-6" />
