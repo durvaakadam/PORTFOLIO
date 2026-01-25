@@ -9,7 +9,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Durva Kadam - Creative Engineer',
+  title: 'Durva Kadam - Fullstack Developer',
   description: 'I design and build products that deliver real impact. Full Stack Developer & Designer based in India.',
   generator: 'v0.app',
   icons: {
