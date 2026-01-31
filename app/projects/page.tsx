@@ -11,7 +11,7 @@ export default function ProjectsPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main className="pt-20 min-h-screen">
         <ProjectsPageContent />
       </main>
       <Footer />

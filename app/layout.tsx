@@ -7,6 +7,7 @@ import CustomCursor from '@/components/CustomCursor'
 import BackToTop from "@/components/BackToTop";
 import ScrollToTopOnLoad from "@/components/ScrollToTopOnLoad";
 import './globals.css'
+import { Navbar } from '@/components/navbar'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -49,6 +50,7 @@ export default function RootLayout({
         <CustomCursor />
         <ScrollToTopOnLoad />
         <BackToTop />
+        <Navbar />
         {children}
         <Analytics />
       </body>

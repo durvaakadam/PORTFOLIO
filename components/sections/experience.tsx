@@ -26,7 +26,7 @@ export function Experience() {
         {/* Work Experience Header */}
         <div className="flex items-center gap-3 mb-2">
           <Briefcase className="h-8 w-8 text-foreground" />
-          <h2 className="text-3xl md:text-4xl font-bold">Work Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-bold">Work Experience</h2>
         </div>
         <div className="w-20 h-1 bg-accent mb-6" />
         <p className="text-muted-foreground mb-12 max-w-3xl">

@@ -8,7 +8,7 @@ import { projects } from "@/components/sections/projects"
 
 export function ProjectsPageContent() {
   return (
-    <section className="py-20 px-4 min-h-screen">
+    <section className="pt-2 pb-20 px-4 min-h-screen">
       <div className="max-w-6xl mx-auto">
         {/* Back Button */}
         <Button variant="ghost" asChild className="mb-8 hover:bg-secondary">
@@ -37,7 +37,7 @@ export function ProjectsPageContent() {
             >
               {/* Project Image/Mockup */}
               <div className="flex-1 w-full">
-                <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-secondary/30 border border-border shadow-2xl">
+                <div className="relative aspect-[15/9] rounded-xl overflow-hidden bg-secondary/30 border border-border shadow-2xl">
                   <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent" />
                   <Image
                     src={project.image || "/placeholder.svg"}
