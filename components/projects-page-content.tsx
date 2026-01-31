@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { projects } from "@/components/sections/projects"
+import { ProjectImageCarousel } from "@/components/ui/ProjectImageCarousel"
 
 export function ProjectsPageContent() {
   return (
@@ -37,15 +38,7 @@ export function ProjectsPageContent() {
             >
               {/* Project Image/Mockup */}
               <div className="flex-1 w-full">
-                <div className="relative aspect-[15/9] rounded-xl overflow-hidden bg-secondary/30 border border-border shadow-2xl">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent" />
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <ProjectImageCarousel images={project.images} alt={project.title} />
               </div>
               
               {/* Project Details */}

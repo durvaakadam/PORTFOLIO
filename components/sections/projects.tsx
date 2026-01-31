@@ -6,11 +6,12 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Aos from "aos"
 import "aos/dist/aos.css"
+import { ProjectImageCarousel } from "@/components/ui/ProjectImageCarousel"
 export const projects = [
   {
     title: "CityShield",
     subtitle: "AI-Powered Predictive Policing & Crime Management System",
-    image: "/images/cityshield2.jpeg",
+    images: ["/images/cityshield/cityshield.jpeg", "/images/cityshield/cityshield2.jpeg", "/images/cityshield/cityshield3.png"],
     link: "https://github.com/inception-js-org/CityShield",
     highlights: [
       "A city-scale crime prediction and law enforcement management platform focused on real-time situational awareness and patrol optimization.",
@@ -23,7 +24,7 @@ export const projects = [
   {
     title: "ATTENDIX",
     subtitle: "AI-Powered Smart Attendance & Identity Verification System",
-    image: "/images/attendix.png",
+    images: ["/images/attendix.png"],
     link: "https://github.com/inception-js-org/HackCrypt",
     highlights: [
       "A smart attendance and identity verification platform that combines facial recognition and fingerprint authentication for educational institutions.",
@@ -36,7 +37,7 @@ export const projects = [
   {
     title: "Victor",
     subtitle: "Retrieval-Augmented Question Answering System",
-    image: "/images/victor.jpeg",
+    images: ["/images/victor.jpeg"],
     link: "https://github.com/durvaakadam/victor",
     highlights: [
       "A retrieval-augmented question answering system built on LangChain and Milvus for semantic document search and contextual responses.",
@@ -47,7 +48,7 @@ export const projects = [
   {
     title: "CodeIQ",
     subtitle: "Agentic Code Documentation System",
-    image: "/images/codeiq.jpg",
+    images: ["/images/codeiq.jpg"],
     link: "https://github.com/durvaakadam/CodeIQ",
     highlights: [
       "A system that generates and validates code documentation using multiple coordinated AI agents.",
@@ -58,7 +59,7 @@ export const projects = [
   {
     title: "UrbanDepot",
     subtitle: "Real-Time Parking Marketplace Web Platform",
-    image: "/images/urban.jpg",
+    images: ["/images/urban.jpg"],
     link: "https://github.com/durvaakadam/UrbanDepot",
     highlights: [
       "A full-stack web platform for discovering and booking parking spaces based on real-time availability.",
@@ -69,7 +70,7 @@ export const projects = [
   {
     title: "DISPENZO 2.0",
     subtitle: "Smart Ration Dispensing & Monitoring System (IoT + Web)",
-    image: "/images/dispenzo.jpg",
+    images: ["/images/dispenzo.jpg"],
     link: "https://github.com/durvaakadam/DISPENZO-2.0",
     highlights: [
       "An IoT-based smart ration distribution system designed to improve transparency and reduce manual intervention in public distribution workflows.",
@@ -81,7 +82,7 @@ export const projects = [
   {
     title: "CRM Dashboard",
     subtitle: "Role-Based Scheduling & Analytics Platform",
-    image: "/images/crm-dashboard.jpg",
+    images: ["/images/crm-dashboard.jpg"],
     link: "https://github.com/durvaakadam/CRM-DASHBOARD",
     highlights: [
       "A modular CRM dashboard system organized around role-specific workflows for CEOs, counsellors, and HR teams.",
@@ -93,7 +94,7 @@ export const projects = [
   {
     title: "VisionGuard",
     subtitle: "Web-Based Image Classification System",
-    image: "/images/visionguard.jpg",
+    images: ["/images/visionguard.jpg"],
     link: "https://github.com/durvaakadam/VisionGuard",
     highlights: [
       "An image classification web application powered by a custom convolutional neural network.",
@@ -105,7 +106,7 @@ export const projects = [
   {
     title: "Velvet & Whisk",
     subtitle: "E-Commerce Web Application",
-    image: "/images/velvet-whisk.jpg",
+    images: ["/images/velvet-whisk.jpg"],
     link: "https://github.com/durvaakadam/Velvet-and-Whisk",
     highlights: [
       "A front-end e-commerce application focused on smooth navigation and a polished shopping experience.",
@@ -146,19 +147,7 @@ export function Projects() {
               } gap-8 lg:gap-12 items-center`}
             >
               <div className="flex-1 w-full">
-                {/* <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-secondary/30 border border-border shadow-2xl"> */}
-
-                <div className="relative aspect-[15/9] rounded-xl overflow-hidden bg-secondary/30 border border-border shadow-2xl">
-
-
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent" />
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <ProjectImageCarousel images={project.images} alt={project.title} />
               </div>
 
               <div className="flex-1 w-full">
