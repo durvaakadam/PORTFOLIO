@@ -165,15 +165,17 @@ export function Projects() {
           {featuredProjects.map((project, index) => (
             <div
               key={index}
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+              data-aos-duration="900"
               className={`flex flex-col ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
               } gap-8 lg:gap-12 items-center`}
             >
-              <div className="flex-1 w-full">
+              <div className="flex-1 w-full" data-aos="zoom-in" data-aos-duration="800" data-aos-delay={100}>
                 <ProjectImageCarousel images={project.images} alt={project.title} />
               </div>
 
-              <div className="flex-1 w-full">
+              <div className="flex-1 w-full" data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} data-aos-duration="900" data-aos-delay={150}>
                 <h3 className="text-2xl md:text-3xl font-bold mb-3 flex items-center gap-2">
                   {project.title}
                   {project.link && (
@@ -195,6 +197,9 @@ export function Projects() {
                   {project.highlights.map((highlight, i) => (
                     <li
                       key={i}
+                      data-aos="fade-up"
+                      data-aos-delay={i * 80}
+                      data-aos-duration="600"
                       className="flex gap-3 text-muted-foreground leading-relaxed"
                     >
                       <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
@@ -211,7 +216,7 @@ export function Projects() {
           <Button
             asChild
             size="lg"
-            className="bg-accent text-accent-foreground hover:bg-accent/90"
+            className="rounded-full bg-accent text-white hover:bg-accent/80 px-6 py-2 text-base font-semibold shadow-none"
           >
             <Link href="/projects" className="flex items-center gap-2">
               View All Projects

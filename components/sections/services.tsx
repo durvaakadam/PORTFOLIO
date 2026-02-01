@@ -27,7 +27,7 @@ const technologies = [
 
 export function Services() {
   return (
-    <section id="services" className="py-20 px-4" data-aos="fade-up">
+    <section id="services" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -42,12 +42,15 @@ export function Services() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Services */}
-          <div>
+          <div data-aos="fade-right" data-aos-duration="900">
             <h3 className="text-xl font-bold mb-6">What I Do</h3>
             <div className="grid grid-cols-2 gap-4">
-              {services.map((service) => (
+              {services.map((service, index) => (
                 <div
                   key={service}
+                  data-aos="fade-right"
+                  data-aos-delay={index * 100}
+                  data-aos-duration="600"
                   className="
                     group flex items-center gap-3 p-4 rounded-lg
                     bg-white dark:bg-[#0e0e0e]
@@ -80,16 +83,19 @@ export function Services() {
           </div>
 
           {/* Technologies */}
-          <div className="relative">
+          <div className="relative" data-aos="fade-left" data-aos-duration="900">
             <div className="absolute -top-8 right-0">
               <ChevronDown className="h-6 w-6 text-accent animate-bounce" />
             </div>
 
             <h3 className="text-xl font-bold mb-6">Technologies</h3>
             <div className="grid grid-cols-5 gap-4">
-              {technologies.map((tech) => (
+              {technologies.map((tech, index) => (
                 <div
                   key={tech.name}
+                  data-aos="fade-left"
+                  data-aos-delay={index * 100}
+                  data-aos-duration="600"
                   className="
                     flex flex-col items-center justify-center p-4 rounded-xl
                     bg-white dark:bg-[#0e0e0e]

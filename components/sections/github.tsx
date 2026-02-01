@@ -3,8 +3,10 @@ export default function GitHub() {
     <section
       id="github"
       className="max-w-5xl mx-auto px-4 py-20"
+      data-aos="fade-up"
+      data-aos-duration="900"
     >
-      <h2 className="text-3xl md:text-4xl font-semibold mb-8">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-8" data-aos="zoom-in" data-aos-duration="700">
         GitHub Contributions
       </h2>
 
@@ -17,6 +19,8 @@ export default function GitHub() {
           transition-all duration-300
           hover:shadow-lg hover:shadow-accent/20
         "
+        data-aos="flip-up"
+        data-aos-duration="800"
       >
         <a
           href="https://github.com/durvaakadam"

@@ -51,11 +51,11 @@ export default function BackToTop() {
       style={{ position: "fixed", right: 24, bottom: bottomOffset, zIndex: 50 }}
       className="
         h-10 w-10 rounded-full
-        bg-accent/90 text-accent-foreground
+        bg-accent text-white
         flex items-center justify-center
-        shadow-lg shadow-accent/30
+        shadow-none
         transition-all duration-300
-        hover:scale-110 hover:bg-accent
+        hover:scale-110 hover:bg-accent/80
         focus:outline-none
       "
     >

@@ -38,6 +38,8 @@ export function Experience() {
           {experiences.map((exp, index) => (
          <div
     key={index}
+    data-aos="zoom-in"
+    data-aos-duration="800"
     className="
       relative p-8 rounded-3xl
       bg-white dark:bg-[#0e0e0e]
@@ -72,6 +74,8 @@ export function Experience() {
                 {exp.highlights.map((highlight, i) => (
                   <li
                     key={i}
+                    data-aos="fade-right"
+                    data-aos-duration="600"
                     className="
                       flex gap-3 text-muted-foreground text-sm leading-relaxed
                     "

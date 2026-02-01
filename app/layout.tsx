@@ -6,6 +6,7 @@ import { ThemeProvider } from 'next-themes'
 import CustomCursor from '@/components/CustomCursor'
 import BackToTop from "@/components/BackToTop";
 import ScrollToTopOnLoad from "@/components/ScrollToTopOnLoad";
+import AOSInitializer from '@/components/AOSInitializer';
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 
@@ -47,6 +48,7 @@ export default function RootLayout({
         <div className="fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,rgba(255,255,255,.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,.07)_1px,transparent_1px)] bg-[size:6rem_4rem] pointer-events-none dark:block hidden" />
         {/* Grid Background - Light Mode */}
         <div className="fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,rgba(0,0,0,.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,.07)_1px,transparent_1px)] bg-[size:6rem_4rem] pointer-events-none dark:hidden" />
+        <AOSInitializer />
         <CustomCursor />
         <ScrollToTopOnLoad />
         <BackToTop />
