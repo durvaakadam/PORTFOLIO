@@ -18,32 +18,26 @@ const techStack = [
 
 export function About() {
   return (
-    <section id="about" className="py-20 px-4" data-aos="fade-up" data-aos-duration="900">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          
+    <section id="about" className="pt-16 pb-10 px-2 sm:py-20 sm:px-4 flex flex-col items-center overflow-x-hidden w-full max-w-screen overflow-hidden" data-aos="fade-up" data-aos-duration="900">
+      <div className="max-w-6xl mx-auto w-full max-w-full overflow-x-hidden">
+        <div className="flex flex-col gap-y-10 lg:grid lg:grid-cols-2 gap-x-8 items-start w-full max-w-full overflow-x-hidden">
           {/* Left Column */}
-          <div className="space-y-6">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                About Me
-              </h2>
-              <div className="w-16 h-1 bg-accent" />
+          <div className="space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left w-full">
+            <div className="w-full flex flex-col items-center lg:items-start">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 leading-tight">About Me</h2>
+              <div className="w-16 h-1 bg-accent mx-auto lg:mx-0" />
             </div>
-
-            <p className="text-muted-foreground text-lg leading-relaxed">
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed max-w-xs mx-auto lg:max-w-none">
               I’m a Full Stack Developer and Computer Science undergraduate based in Mumbai,
               with a strong focus on building scalable, production-grade web systems.
             </p>
-
-            <p className="text-muted-foreground text-lg leading-relaxed">
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed max-w-xs mx-auto lg:max-w-none">
               My work spans modern frontend development with React and Next.js,
               robust backend systems using Node.js, Express, and FastAPI,
               and AI-driven platforms involving RAG pipelines, agentic workflows,
               and large-scale document intelligence systems.
             </p>
-
-            <div className="flex items-center gap-8 pt-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8 pt-4 w-full">
               <a href="/DURVA_KADAM.pdf" download target="_blank" rel="noopener noreferrer">
                 <Button className="rounded-full bg-accent text-white hover:bg-accent/80 px-6 py-2 text-base font-semibold shadow-none">
                   <Download className="mr-2 h-4 w-4" />
@@ -53,14 +47,11 @@ export function About() {
               <ChevronDown className="h-8 w-8 text-accent animate-bounce hidden lg:block" />
             </div>
           </div>
-
           {/* Right Column */}
-          <div className="space-y-10" data-aos="fade-up" data-aos-delay="200">
-            
+          <div className="space-y-8 sm:space-y-10 w-full" data-aos="fade-up" data-aos-delay="200">
             {/* Journey */}
             <div>
-              <h3 className="text-2xl font-bold mb-6">My Journey</h3>
-
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center lg:text-left">My Journey</h3>
               <ul className="space-y-0">
                 {journey.map((item, index) => (
                   <li
@@ -72,14 +63,11 @@ export function About() {
                       {index !== 0 && (
                         <span className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-1/2 bg-accent/60" />
                       )}
-
                       <span className="w-2.5 h-2.5 bg-accent rounded-full z-10 transition-all duration-300 group-hover:w-3.5 group-hover:h-3.5" />
-
                       {index !== journey.length - 1 && (
                         <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-px h-1/2 bg-accent/60" />
                       )}
                     </div>
-
                     <span className="leading-relaxed transition-colors duration-300 group-hover:text-accent">
                       {item}
                     </span>
@@ -87,12 +75,10 @@ export function About() {
                 ))}
               </ul>
             </div>
-
             {/* Tech Stack */}
             <div>
-              <h3 className="text-2xl font-bold mb-6">Tech Stack</h3>
-
-              <div className="flex flex-wrap gap-3">
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center lg:text-left">Tech Stack</h3>
+              <div className="flex flex-wrap gap-2 sm:gap-3 justify-center lg:justify-start">
                 {techStack.map((tech, index) => (
                   <span
                     key={tech}
@@ -116,7 +102,6 @@ export function About() {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       </div>
