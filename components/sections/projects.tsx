@@ -11,7 +11,11 @@ export const projects = [
   {
     title: "CityShield",
     subtitle: "AI-Powered Predictive Policing & Crime Management System",
-    images: ["/images/cityshield/cityshield.jpeg", "/images/cityshield/cityshield2.jpeg", "/images/cityshield/cityshield3.png"],
+    images: [
+      "/images/PROJECTS/CityShield/cityshield.jpeg",
+      "/images/PROJECTS/CityShield/cityshield2.jpeg",
+      "/images/PROJECTS/CityShield/cityshield3.png"
+    ],
     link: "https://github.com/inception-js-org/CityShield",
     highlights: [
       "A city-scale crime prediction and law enforcement management platform focused on real-time situational awareness and patrol optimization.",
@@ -24,7 +28,9 @@ export const projects = [
   {
     title: "ATTENDIX",
     subtitle: "AI-Powered Smart Attendance & Identity Verification System",
-    images: ["/images/attendix.png"],
+    images: [
+      // No images found for ATTENDIX in PROJECTS folder. Please add images to /images/PROJECTS/Attendix/ if available.
+    ],
     link: "https://github.com/inception-js-org/HackCrypt",
     highlights: [
       "A smart attendance and identity verification platform that combines facial recognition and fingerprint authentication for educational institutions.",
@@ -37,7 +43,9 @@ export const projects = [
   {
     title: "Victor",
     subtitle: "Retrieval-Augmented Question Answering System",
-    images: ["/images/victor.jpeg"],
+    images: [
+      "/images/PROJECTS/Victor/victor.jpeg"
+    ],
     link: "https://github.com/durvaakadam/victor",
     highlights: [
       "A retrieval-augmented question answering system built on LangChain and Milvus for semantic document search and contextual responses.",
@@ -48,7 +56,9 @@ export const projects = [
   {
     title: "CodeIQ",
     subtitle: "Agentic Code Documentation System",
-    images: ["/images/codeiq.jpg"],
+    images: [
+      "/images/PROJECTS/CodeIQ/codeiq.jpg"
+    ],
     link: "https://github.com/durvaakadam/CodeIQ",
     highlights: [
       "A system that generates and validates code documentation using multiple coordinated AI agents.",
@@ -59,7 +69,10 @@ export const projects = [
   {
     title: "UrbanDepot",
     subtitle: "Real-Time Parking Marketplace Web Platform",
-    images: ["/images/urban.jpg"],
+    images: [
+      "/images/PROJECTS/UrbanDepot/urban.jpg",
+      "/images/PROJECTS/UrbanDepot/urban1.jpeg"
+    ],
     link: "https://github.com/durvaakadam/UrbanDepot",
     highlights: [
       "A full-stack web platform for discovering and booking parking spaces based on real-time availability.",
@@ -70,7 +83,9 @@ export const projects = [
   {
     title: "DISPENZO 2.0",
     subtitle: "Smart Ration Dispensing & Monitoring System (IoT + Web)",
-    images: ["/images/dispenzo.jpg"],
+    images: [
+      "/images/PROJECTS/Dispenzo/dispenzo.jpg"
+    ],
     link: "https://github.com/durvaakadam/DISPENZO-2.0",
     highlights: [
       "An IoT-based smart ration distribution system designed to improve transparency and reduce manual intervention in public distribution workflows.",
@@ -82,7 +97,10 @@ export const projects = [
   {
     title: "CRM Dashboard",
     subtitle: "Role-Based Scheduling & Analytics Platform",
-    images: ["/images/crm-dashboard.jpg"],
+    images: [
+      "/images/PROJECTS/Crm-Dashboard/crm-dashboard.jpg",
+      "/images/PROJECTS/Crm-Dashboard/1crm-dashboard.jpg"
+    ],
     link: "https://github.com/durvaakadam/CRM-DASHBOARD",
     highlights: [
       "A modular CRM dashboard system organized around role-specific workflows for CEOs, counsellors, and HR teams.",
@@ -94,7 +112,9 @@ export const projects = [
   {
     title: "VisionGuard",
     subtitle: "Web-Based Image Classification System",
-    images: ["/images/visionguard.jpg"],
+    images: [
+      "/images/PROJECTS/VisionGuard/visionguard.jpg"
+    ],
     link: "https://github.com/durvaakadam/VisionGuard",
     highlights: [
       "An image classification web application powered by a custom convolutional neural network.",
@@ -106,7 +126,11 @@ export const projects = [
   {
     title: "Velvet & Whisk",
     subtitle: "E-Commerce Web Application",
-    images: ["/images/velvet-whisk.jpg"],
+    images: [
+      "/images/PROJECTS/VelvetWhisk/velvet-whisk.jpg",
+      "/images/PROJECTS/VelvetWhisk/velvet2.jpg",
+      "/images/PROJECTS/VelvetWhisk/velvet3.jpg"
+    ],
     link: "https://github.com/durvaakadam/Velvet-and-Whisk",
     highlights: [
       "A front-end e-commerce application focused on smooth navigation and a polished shopping experience.",

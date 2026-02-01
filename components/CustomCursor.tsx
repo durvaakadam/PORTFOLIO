@@ -1,42 +1,72 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef } from "react"
 
 export default function CustomCursor() {
-  const [pos, setPos] = useState({ x: 0, y: 0 })
+  const cursorRef = useRef<HTMLDivElement>(null)
+
+  const mouse = useRef({ x: 0, y: 0 })
+  const pos = useRef({ x: 0, y: 0 })
+  const angle = useRef(0)
+  const targetAngle = useRef(0)
 
   useEffect(() => {
-    const move = (e: MouseEvent) => {
-      setPos({ x: e.clientX, y: e.clientY })
+    const onMove = (e: MouseEvent) => {
+      mouse.current.x = e.clientX
+      mouse.current.y = e.clientY
     }
-    window.addEventListener("mousemove", move)
-    return () => window.removeEventListener("mousemove", move)
+
+    window.addEventListener("mousemove", onMove)
+
+    const animate = () => {
+      // --- POSITION ---
+      const dx = mouse.current.x - pos.current.x
+      const dy = mouse.current.y - pos.current.y
+
+      // smooth follow (no snap)
+      pos.current.x += dx * 0.18
+      pos.current.y += dy * 0.18
+
+      // --- ROTATION TARGET ---
+      if (Math.abs(dx) + Math.abs(dy) > 0.1) {
+        targetAngle.current = Math.atan2(dy, dx) * (180 / Math.PI)
+      }
+
+      // --- ROTATION LERP (THIS IS THE KEY) ---
+      angle.current += (targetAngle.current - angle.current) * 0.15
+
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `
+          translate3d(${pos.current.x - 12}px, ${pos.current.y - 12}px, 0)
+          rotate(${angle.current + 90}deg)
+        `
+      }
+
+      requestAnimationFrame(animate)
+    }
+
+    animate()
+    return () => window.removeEventListener("mousemove", onMove)
   }, [])
 
   return (
     <div
+      ref={cursorRef}
       className="pointer-events-none fixed top-0 left-0 z-[9999]"
-      style={{
-        transform: `translate(${pos.x - 12}px, ${pos.y - 12}px)`,
-        // transition: 'transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-        transition: 'transform 0.0s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-    }}
     >
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
-          d="M3 2L10.46 21.35L12.36 14.36L19.38 12.36L3 2Z"
-          fill="url(#gradient)"
-          stroke="url(#gradient)"
-          strokeWidth="0.5"
+          fill="#269BFF"
+          stroke="#269BFF"
+          strokeWidth="2.5"
+          d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"
         />
-        <defs>
-          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#3b82f6" />
-            <stop offset="100%" stopColor="#60a5fa" />
-          </linearGradient>
-        </defs>
       </svg>
     </div>
   )
 }
-2
