@@ -2,7 +2,7 @@
 
 # Durva Kadam Portfolio
 
-### Full Stack Developer | Creative Problem Solver
+### Full Stack Developer | Code & Infrastructure
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://durvakadam.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
