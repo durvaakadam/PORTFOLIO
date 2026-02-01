@@ -70,7 +70,7 @@ export function About() {
                   <li
                     key={index}
                     data-aos="fade-up"
-                    className="flex items-center gap-4 min-h-8"
+                    className="flex items-center gap-4 min-h-8 transition-all duration-300 hover:pl-2 cursor-pointer group"
                   >
                     {/* Dot + line column */}
                     <div className="flex flex-col items-center h-full relative">
@@ -79,14 +79,14 @@ export function About() {
                         <span className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-1/2 bg-accent/60" />
                       )}
                       {/* Dot */}
-                      <span className="w-2.5 h-2.5 bg-accent rounded-full z-10" />
+                      <span className="w-2.5 h-2.5 bg-accent rounded-full z-10 transition-all duration-300 group-hover:w-3.5 group-hover:h-3.5" />
                       {/* Full vertical line (except last) */}
                       {index !== journey.length - 1 && (
                         <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-px h-1/2 bg-accent/60" />
                       )}
                     </div>
                     {/* Text */}
-                    <span className="leading-relaxed">{item}</span>
+                    <span className="leading-relaxed transition-colors duration-300 group-hover:text-accent">{item}</span>
                   </li>
                 ))}
               </ul>

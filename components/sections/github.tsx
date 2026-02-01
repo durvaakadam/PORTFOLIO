@@ -15,6 +15,7 @@ export default function GitHub() {
           p-6
           overflow-x-auto
           transition-all duration-300
+          hover:shadow-lg hover:shadow-accent/20
         "
       >
         <a

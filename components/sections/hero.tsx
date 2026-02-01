@@ -226,7 +226,7 @@ FULL STACK DEVELOPER
             <p className="text-lg sm:text-xl md:text-2xl tracking-[0.32em] text-muted-foreground uppercase">
               I Design And Build Products That
             </p>
-            <p className="text-3xl sm:text-4xl md:text-5xl italic font-serif text-white">
+            <p className="text-3xl sm:text-4xl md:text-5xl italic font-serif text-foreground">
               deliver real impact.
             </p>
           </div>
@@ -239,10 +239,10 @@ FULL STACK DEVELOPER
           <div className="h-8" />
 
           {/* Location */}
-          <div className="flex items-start gap-4">
-            <MapPin className="h-6 w-6 text-accent mt-1" />
-            <div>
-              <p className="text-base font-semibold tracking-wide">
+          <div className="flex items-start gap-4 group cursor-pointer transition-all duration-300">
+            <MapPin className="h-6 w-6 text-accent mt-1 transition-all duration-300 group-hover:scale-125" />
+            <div className="transition-all duration-300 group-hover:translate-x-1">
+              <p className="text-base font-semibold tracking-wide transition-colors duration-300 group-hover:text-accent">
                 BASED IN INDIA<span className="text-accent">,</span>
               </p>
               <p className="text-sm text-muted-foreground">INDIA</p>
@@ -250,10 +250,10 @@ FULL STACK DEVELOPER
           </div>
 
           {/* Role */}
-          <div className="flex items-start gap-4 mt-4">
-            <Layers className="h-6 w-6 text-accent mt-1" />
-            <div>
-              <p className="text-base font-semibold tracking-wide">
+          <div className="flex items-start gap-4 mt-4 group cursor-pointer transition-all duration-300">
+            <Layers className="h-6 w-6 text-accent mt-1 transition-all duration-300 group-hover:scale-125" />
+            <div className="transition-all duration-300 group-hover:translate-x-1">
+              <p className="text-base font-semibold tracking-wide transition-colors duration-300 group-hover:text-accent">
                 FULL STACK DEV<span className="text-accent">,</span>
               </p>
               <p className="text-sm text-muted-foreground">& SYSTEMS FOCUSED</p>

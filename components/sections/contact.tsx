@@ -51,7 +51,9 @@ export function Contact() {
             ">
               <Mail className="h-6 w-6 text-accent transition-colors duration-300 group-hover:text-accent" />
             </div>
-            <h3 className="font-semibold text-lg mb-2 group-hover:text-accent transition-colors duration-300">Email</h3>
+            <h3 className="relative font-semibold text-lg mb-2 group-hover:text-accent transition-colors duration-300 inline-block">Email
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent rounded-full transition-all duration-300 group-hover:w-8" />
+            </h3>
             <p className="text-muted-foreground text-sm group-hover:text-foreground transition-colors duration-300">
               durvakadam204@gmail.com
             </p>
@@ -81,7 +83,9 @@ export function Contact() {
             ">
               <Phone className="h-6 w-6 text-accent transition-colors duration-300 group-hover:text-accent" />
             </div>
-            <h3 className="font-semibold text-lg mb-2 group-hover:text-accent transition-colors duration-300">Phone</h3>
+            <h3 className="relative font-semibold text-lg mb-2 group-hover:text-accent transition-colors duration-300 inline-block">Phone
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent rounded-full transition-all duration-300 group-hover:w-8" />
+            </h3>
             <p className="text-muted-foreground text-sm group-hover:text-foreground transition-colors duration-300">
               +91 8828174914
             </p>
@@ -112,7 +116,9 @@ export function Contact() {
               <AtSign className="h-6 w-6 text-accent transition-colors duration-300 group-hover:text-accent" />
             </div>
 
-            <h3 className="font-semibold text-lg mb-4 group-hover:text-accent transition-colors duration-300">Socials</h3>
+            <h3 className="relative font-semibold text-lg mb-4 group-hover:text-accent transition-colors duration-300 inline-block">Socials
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-accent rounded-full transition-all duration-300 group-hover:w-8" />
+            </h3>
 
             <div className="flex gap-5 justify-center">
               <Link
