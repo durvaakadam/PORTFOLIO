@@ -53,7 +53,7 @@
 
 **Durva Kadam** - Full Stack Developer
 
-- 🌐 Portfolio: [your-portfolio-url.com](https://your-portfolio-url.com)
-- 💼 LinkedIn: [linkedin.com/in/durvakadam](https://linkedin.com/in/durvakadam)
-- 🐙 GitHub: [@yourusername](https://github.com/yourusername)
-- 📧 Email: your.email@example.com
+- 🌐 Portfolio: [your-portfolio-url.com](https://durvakadam.vercel.app)
+- 💼 LinkedIn: [linkedin.com/in/durvakadam](https://www.linkedin.com/in/durva-kadam-02a22a25a)
+- 🐙 GitHub: [@yourusername](https://github.com/durvaakadam)
+- 📧 Email: durvakadam204@gmail.com
