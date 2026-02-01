@@ -9,7 +9,7 @@ const navLinks = [
   { name: "Home", href: "#" },
   { name: "About", href: "#about" },
   { name: "Work", href: "#work" },
-  { name: "Blogs", href: "#blogs" },
+  { name: "Projects", href: "#projects" },
 ]
 
 const resumeUrl = "https://drive.google.com/file/d/17XY932lmxK-1HiaCfk5xm0ka53czA6KI/view?usp=sharing";

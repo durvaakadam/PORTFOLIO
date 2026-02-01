@@ -31,50 +31,82 @@ export function Services() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Services & Tech</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Technical Expertise
+          </h2>
           <div className="w-16 h-1 bg-accent mb-6" />
           <p className="text-muted-foreground max-w-2xl">
             I design and build scalable, high-performance web applications from idea to production — with a strong focus on usability, performance, and clean architecture.
           </p>
         </div>
-        
+
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* What I Do - Service Cards */}
+          {/* Services */}
           <div>
             <h3 className="text-xl font-bold mb-6">What I Do</h3>
             <div className="grid grid-cols-2 gap-4">
               {services.map((service) => (
-                <div 
-                  key={service} 
-                  className="flex items-center gap-3 p-4 border border-border rounded-lg bg-secondary/70 hover:bg-secondary/85 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg group"
+                <div
+                  key={service}
+                  className="
+                    group flex items-center gap-3 p-4 rounded-lg
+                    bg-white dark:bg-[#0e0e0e]
+                    border border-black/10 dark:border-white/10
+                    shadow-[0_6px_20px_rgba(0,0,0,0.06)]
+                    dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]
+                    hover:-translate-y-1
+                    hover:shadow-[0_12px_35px_rgba(0,0,0,0.12)]
+                    dark:hover:shadow-[0_30px_80px_rgba(0,0,0,0.7)]
+                    hover:border-accent/40
+                    transition-all duration-300 ease-out
+                  "
                 >
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-accent/40 group-hover:bg-accent/60 transition-colors duration-300">
+                  <div
+                    className="
+                      flex items-center justify-center w-8 h-8 rounded-full
+                      bg-accent/40
+                      transition-transform duration-300
+                      group-hover:scale-110
+                    "
+                  >
                     <Check className="h-4 w-4 text-accent" />
                   </div>
-                  <span className="text-sm font-medium group-hover:text-accent transition-colors duration-300">{service}</span>
+                  <span className="text-sm font-medium text-foreground">
+                    {service}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
-          
+
           {/* Technologies */}
           <div className="relative">
             <div className="absolute -top-8 right-0">
               <ChevronDown className="h-6 w-6 text-accent animate-bounce" />
             </div>
+
             <h3 className="text-xl font-bold mb-6">Technologies</h3>
             <div className="grid grid-cols-5 gap-4">
               {technologies.map((tech) => (
-                <div 
-                  key={tech.name} 
-                  className="flex flex-col items-center justify-center p-4 rounded-xl bg-secondary hover:bg-secondary/80 transition-colors group"
+                <div
+                  key={tech.name}
+                  className="
+                    flex flex-col items-center justify-center p-4 rounded-xl
+                    bg-white dark:bg-[#0e0e0e]
+                    border border-black/10 dark:border-white/10
+                    shadow-[0_6px_20px_rgba(0,0,0,0.06)]
+                    dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]
+                    hover:scale-105
+                    hover:border-accent/40
+                    transition-all duration-300 ease-out
+                  "
                 >
                   <div className="relative w-10 h-10">
                     <Image
-                      src={tech.icon || "/placeholder.svg"}
+                      src={tech.icon}
                       alt={tech.name}
                       fill
-                      className="object-contain dark:filter dark:brightness-200 dark:invert transition-all"
+                      className="object-contain dark:invert dark:brightness-200 transition-all"
                     />
                   </div>
                 </div>

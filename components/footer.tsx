@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="py-2 px-2 border-t border-border bg-white/95 dark:bg-background" data-aos="fade-up">
+    <footer className="py-2 px-2 border-t border-border bg-white/95 dark:bg-background">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
         <p className="text-xs text-foreground/80 dark:text-muted-foreground">
           © {new Date().getFullYear()} Durva Kadam. All rights reserved.

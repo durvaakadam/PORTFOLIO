@@ -16,29 +16,27 @@ export const projects = [
       "/images/PROJECTS/CityShield/cityshield2.jpeg",
       "/images/PROJECTS/CityShield/cityshield3.png"
     ],
-    link: "https://github.com/inception-js-org/CityShield",
-    highlights: [
-      "A city-scale crime prediction and law enforcement management platform focused on real-time situational awareness and patrol optimization.",
-      "Combines multiple machine learning models to forecast crime risk at zone and subtype levels using temporal, spatial, and environmental data.",
-      "Provides interactive dashboards for administrators and patrol officers, including heat maps, patrol routes, and live incident alerts.",
-      "Supports digital FIR filing, complaint tracking, and evidence management with end-to-end status workflows.",
-      "Includes real-time patrol tracking and AI-generated route recommendations based on predicted crime hotspots."
-    ]
+   link: "https://github.com/inception-js-org/CityShield",
+highlights: [
+  "A crime analytics and operational decision-support system focused on real-time risk assessment and situational awareness.",
+  "Uses an ensemble of machine learning models to forecast crime likelihood at zone and subtype levels from temporal, spatial, and environmental features.",
+  "Provides interactive geospatial visualizations, patrol route optimization, and live incident tracking built on a real-time data pipeline."
+]
+
   },
   {
     title: "ATTENDIX",
     subtitle: "AI-Powered Smart Attendance & Identity Verification System",
     images: [
-      // No images found for ATTENDIX in PROJECTS folder. Please add images to /images/PROJECTS/Attendix/ if available.
+      "/images/PROJECTS/Attendix/attendix.jpg"
     ],
     link: "https://github.com/inception-js-org/HackCrypt",
-    highlights: [
-      "A smart attendance and identity verification platform that combines facial recognition and fingerprint authentication for educational institutions.",
-      "Uses real-time face detection and ArcFace embeddings for live camera attendance, along with batch video processing for multi-person verification.",
-      "Includes role-based dashboards for students, faculty, and administrators with session management, analytics, and grievance handling.",
-      "Integrates a local embedding cache with Pinecone fallback to balance low-latency verification and scalable similarity search.",
-      "Supports hardware-based fingerprint verification via Arduino serial communication for additional biometric assurance."
-    ]
+   highlights: [
+  "A full-stack biometric attendance system integrating facial embeddings and fingerprint verification for identity validation.",
+  "Implements real-time face recognition and batch video-based attendance using embedding similarity search with caching and vector database fallback.",
+  "Designed with a scalable API-driven architecture, supporting session tracking, verification workflows, and analytics pipelines."
+]
+
   },
   {
     title: "Victor",
@@ -60,11 +58,12 @@ export const projects = [
       "/images/PROJECTS/CodeIQ/codeiq.jpg"
     ],
     link: "https://github.com/durvaakadam/CodeIQ",
-    highlights: [
-      "A system that generates and validates code documentation using multiple coordinated AI agents.",
-      "Combines static analysis and runtime inspection through AST parsing and execution tracing to improve documentation quality.",
-      "Automates repository workflows such as branch creation, commits, and pull request generation."
-    ]
+ highlights: [
+  "An agentic system that generates and validates documentation across large Python codebases using specialized collaborating agents.",
+  "Integrates static analysis (AST / Tree-sitter) with contextual retrieval and LLM-based generation for accurate, structured docstrings.",
+"Applies execution-level verification through controlled function invocation and behavioral observation to detect inconsistencies and refine generated documentation."
+]
+
   },
   {
     title: "UrbanDepot",
@@ -75,10 +74,11 @@ export const projects = [
     ],
     link: "https://github.com/durvaakadam/UrbanDepot",
     highlights: [
-      "A full-stack web platform for discovering and booking parking spaces based on real-time availability.",
-      "Integrates Google Maps for live location tracking, routing, and distance-based search to reduce parking discovery time.",
-      "Includes OCR-based document verification to automate parking owner onboarding and validation."
-    ]
+  "A real-time parking discovery and booking platform built around map-based search, availability filtering, and slot reservation workflows.",
+  "Integrates Google Maps for live location visualization, routing, and distance-aware search, enabling time- and location-based parking decisions.",
+  "Implements secure onboarding and operations using Firebase authentication, OCR-based document verification, role-based access control, and Razorpay payments."
+]
+
   },
   {
     title: "DISPENZO 2.0",
@@ -91,7 +91,6 @@ export const projects = [
       "An IoT-based smart ration distribution system designed to improve transparency and reduce manual intervention in public distribution workflows.",
       "Combines ESP32-based hardware with load cells, temperature sensors, ultrasonic sensors, and servo motors for automated dispensing and monitoring.",
       "Provides a web dashboard showing real-time weight tracking, container levels, temperature status, and system alerts.",
-      "Supports live telemetry and remote monitoring, with serial logs and threshold-based dispensing control."
     ]
   },
   {
@@ -127,9 +126,9 @@ export const projects = [
     title: "Velvet & Whisk",
     subtitle: "E-Commerce Web Application",
     images: [
-      "/images/PROJECTS/VelvetWhisk/velvet-whisk.jpg",
-      "/images/PROJECTS/VelvetWhisk/velvet2.jpg",
-      "/images/PROJECTS/VelvetWhisk/velvet3.jpg"
+      "/images/PROJECTS/VelvetWhisk/1.jpg",
+      "/images/PROJECTS/VelvetWhisk/2.jpg",
+      "/images/PROJECTS/VelvetWhisk/3.jpg"
     ],
     link: "https://github.com/durvaakadam/Velvet-and-Whisk",
     highlights: [

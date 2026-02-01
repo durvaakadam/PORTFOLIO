@@ -25,7 +25,7 @@ export function ProjectImageCarousel({
     setIndex((i) => (i === images.length - 1 ? 0 : i + 1))
 
   return (
-    <div className="relative aspect-[15/9] overflow-hidden rounded-xl bg-secondary/30 border border-border shadow-2xl">
+    <div className="relative aspect-[15/9] overflow-hidden rounded-xl bg-secondary/30 border border-border shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent z-10 pointer-events-none" />
 

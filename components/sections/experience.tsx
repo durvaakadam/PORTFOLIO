@@ -36,10 +36,29 @@ export function Experience() {
         {/* Work Experience Grid */}
         <div className="grid md:grid-cols-1 gap-6 w-full max-w-3xl">
           {experiences.map((exp, index) => (
-            <div 
-              key={index}
-              className="p-6 rounded-xl bg-card border border-border hover:border-accent/50 transition-colors"
-            >
+         <div
+    key={index}
+    className="
+      relative p-8 rounded-3xl
+      bg-white dark:bg-[#0e0e0e]
+      border border-black/10 dark:border-white/10
+      shadow-[0_10px_40px_rgba(0,0,0,0.08)]
+      dark:shadow-[0_30px_80px_rgba(0,0,0,0.6)]
+      hover:-translate-y-1
+      hover:border-accent/40
+      hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+      dark:hover:shadow-[0_40px_120px_rgba(0,0,0,0.75)]
+      transition-all duration-300 ease-out
+    "
+  >
+      <div className="
+        pointer-events-none absolute inset-0 rounded-3xl
+        opacity-0 hover:opacity-100
+        transition-opacity duration-300
+        bg-gradient-to-br from-accent/10 via-transparent to-transparent
+      " />
+
+
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
                   <h4 className="text-xl font-bold mb-1">{exp.company}</h4>
@@ -51,7 +70,12 @@ export function Experience() {
               </div>
               <ul className="space-y-3">
                 {exp.highlights.map((highlight, i) => (
-                  <li key={i} className="flex gap-3 text-muted-foreground text-sm leading-relaxed">
+                  <li
+                    key={i}
+                    className="
+                      flex gap-3 text-muted-foreground text-sm leading-relaxed
+                    "
+                  >
                     <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
                     {highlight}
                   </li>

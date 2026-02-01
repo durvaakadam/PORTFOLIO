@@ -67,7 +67,11 @@ export function About() {
               <h3 className="text-2xl font-bold mb-6">My Journey</h3>
               <ul className="space-y-0">
                 {journey.map((item, index) => (
-                  <li key={index} className="flex items-stretch gap-3 text-muted-foreground min-h-8" data-aos="fade-up">
+                  <li
+                    key={index}
+                    data-aos="fade-up"
+                    className="flex items-center gap-4 min-h-8"
+                  >
                     {/* Dot + line column */}
                     <div className="flex flex-col items-center h-full relative">
                       {/* Full vertical line (except first and last) */}
@@ -92,10 +96,23 @@ export function About() {
               <h3 className="text-2xl font-bold mb-6">Tech Stack</h3>
               <div className="flex flex-wrap gap-3">
                 {techStack.map((tech) => (
-                  <span 
-                    key={tech} 
-                    className="px-4 py-2 text-sm border border-border rounded-md text-foreground bg-background/80 shadow-md hover:bg-background/50 transition-colors"
+                  <span
+                    key={tech}
                     data-aos="fade-up"
+                    className="
+                      group flex items-center gap-3 px-5 py-3 text-sm font-medium rounded-2xl
+                      bg-white dark:bg-[#0e0e0e]
+                      border border-black/10 dark:border-white/10
+                      shadow-[0_6px_20px_rgba(0,0,0,0.06)]
+                      dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]
+                      text-foreground
+                      transition-all duration-300 ease-out
+                      hover:-translate-y-1
+                      hover:scale-[1.03]
+                      hover:border-accent/40
+                      hover:shadow-[0_12px_35px_rgba(0,0,0,0.12)]
+                      dark:hover:shadow-[0_30px_80px_rgba(0,0,0,0.7)]
+                    "
                   >
                     {tech}
                   </span>

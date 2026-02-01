@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen">
+      <main>
         <Hero />
         <About />
         <Services />
