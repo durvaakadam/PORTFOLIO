@@ -6,10 +6,10 @@ import { Menu, X, Sun, Moon } from "lucide-react"
 import Link from "next/link"
 
 const navLinks = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#about" },
-  { name: "Work", href: "#work" },
-  { name: "Projects", href: "#projects" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/#about" },
+  { name: "Work", href: "/#work" },
+  { name: "Projects", href: "/#projects" },
 ]
 
 const resumeUrl = "https://drive.google.com/file/d/17XY932lmxK-1HiaCfk5xm0ka53czA6KI/view?usp=sharing";
@@ -77,7 +77,7 @@ export function Navbar() {
             </Link>
           ))}
           <Button size="sm" variant="outline" className="rounded-full bg-transparent hover:text-white" asChild>
-            <Link href="#contact">Contact Me</Link>
+            <Link href="/#contact">Contact Me</Link>
           </Button>
           <Button size="sm" variant="default" className="rounded-full bg-accent text-white hover:bg-accent/80" asChild>
             <a href={resumeUrl} target="_blank" rel="noopener noreferrer">View Resume</a>
@@ -128,7 +128,7 @@ export function Navbar() {
               </Link>
             ))}
             <Button size="sm" variant="outline" className="w-full rounded-full bg-transparent hover:text-white" asChild>
-              <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
+              <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
             </Button>
             <Button size="sm" variant="default" className="w-full rounded-full bg-accent text-white hover:bg-accent/80" asChild>
               <a href={resumeUrl} target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>View Resume</a>

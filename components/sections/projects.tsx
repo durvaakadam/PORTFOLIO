@@ -147,7 +147,7 @@ export function Projects() {
   const featuredProjects = projects.slice(0, 2)
 
   return (
-    <section id="projects" className="py-20 px-4" data-aos="fade-up">
+    <section id="projects" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-3 mb-2">
           <FolderOpen className="h-8 w-8 text-foreground" />
@@ -165,17 +165,18 @@ export function Projects() {
           {featuredProjects.map((project, index) => (
             <div
               key={index}
-              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-              data-aos-duration="900"
               className={`flex flex-col ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
               } gap-8 lg:gap-12 items-center`}
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay={index * 100}
             >
-              <div className="flex-1 w-full" data-aos="zoom-in" data-aos-duration="800" data-aos-delay={100}>
+              <div className="flex-1 w-full">
                 <ProjectImageCarousel images={project.images} alt={project.title} />
               </div>
 
-              <div className="flex-1 w-full" data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} data-aos-duration="900" data-aos-delay={150}>
+              <div className="flex-1 w-full">
                 <h3 className="text-2xl md:text-3xl font-bold mb-3 flex items-center gap-2">
                   {project.title}
                   {project.link && (
@@ -197,9 +198,6 @@ export function Projects() {
                   {project.highlights.map((highlight, i) => (
                     <li
                       key={i}
-                      data-aos="fade-up"
-                      data-aos-delay={i * 80}
-                      data-aos-duration="600"
                       className="flex gap-3 text-muted-foreground leading-relaxed"
                     >
                       <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
