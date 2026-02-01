@@ -45,15 +45,19 @@ export default function RootLayout({
     <html lang="en" className="dark" suppressHydrationWarning>
       <body className={`font-sans antialiased cursor-none relative`}>
         {/* Grid Background - Dark Mode */}
-        <div className="fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,rgba(255,255,255,.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,.07)_1px,transparent_1px)] bg-[size:6rem_4rem] pointer-events-none dark:block hidden" />
+        <div className="fixed inset-0 -z-10 h-screen w-screen bg-background bg-[linear-gradient(to_right,rgba(255,255,255,.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,.07)_1px,transparent_1px)] bg-[size:6rem_4rem] pointer-events-none dark:block hidden overflow-hidden" />
         {/* Grid Background - Light Mode */}
-        <div className="fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,rgba(0,0,0,.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,.07)_1px,transparent_1px)] bg-[size:6rem_4rem] pointer-events-none dark:hidden" />
+        <div className="fixed inset-0 -z-10 h-screen w-screen bg-background bg-[linear-gradient(to_right,rgba(0,0,0,.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,.07)_1px,transparent_1px)] bg-[size:6rem_4rem] pointer-events-none dark:hidden overflow-hidden" />
         <AOSInitializer />
         <CustomCursor />
         <ScrollToTopOnLoad />
         <BackToTop />
-        <Navbar />
-        {children}
+        <div className="flex flex-col items-center w-full">
+          <Navbar />
+          <main className="w-full max-w-screen-xl px-4">
+            {children}
+          </main>
+        </div>
         <Analytics />
       </body>
     </html>

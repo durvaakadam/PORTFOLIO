@@ -18,9 +18,9 @@ const techStack = [
 
 export function About() {
   return (
-    <section id="about" className="pt-16 pb-10 px-2 sm:py-20 sm:px-4 flex flex-col items-center overflow-x-hidden w-full max-w-screen overflow-hidden" data-aos="fade-up" data-aos-duration="900">
-      <div className="max-w-6xl mx-auto w-full max-w-full overflow-x-hidden">
-        <div className="flex flex-col gap-y-10 lg:grid lg:grid-cols-2 gap-x-8 items-start w-full max-w-full overflow-x-hidden">
+    <section id="about" className="pt-16 pb-10 px-2 sm:py-20 sm:px-4 flex flex-col items-center w-full max-w-screen" data-aos="fade-up" data-aos-duration="900">
+      <div className="max-w-6xl mx-auto w-full max-w-full">
+        <div className="flex flex-col gap-y-10 lg:grid lg:grid-cols-2 gap-x-8 items-start w-full max-w-full">
           {/* Left Column */}
           <div className="space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left w-full">
             <div className="w-full flex flex-col items-center lg:items-start">
