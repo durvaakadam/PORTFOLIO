@@ -1,10 +1,13 @@
+
 # Durva Kadam Portfolio
 
 A modern, responsive, and animated portfolio website for Durva Kadam, Full Stack Developer. Built with Next.js, React, Tailwind CSS, and AOS for smooth scroll-based animations.
 
-[Live Demo → durvakadam.vercel.app](https://durvakadam.vercel.app)
-
-##  Screenshots
+<div align="center">
+  <a href="https://durvakadam.vercel.app" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Live%20Demo-%2300C7B7?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+</div>
 
 ### Landing Page
 ![Desktop Screenshot](public/images/PORTFOLIO/1.png)
@@ -35,5 +38,3 @@ A modern, responsive, and animated portfolio website for Durva Kadam, Full Stack
    Visit [http://localhost:3000](http://localhost:3000)
 
 ## © All rights reserved.
-
----
