@@ -61,7 +61,7 @@ export function Navbar() {
           </Link>
           <div className="hidden sm:flex items-center gap-2 text-xs">
             <span className="text-muted-foreground">FULL STACK DEV</span>
-            <span className="text-accent font-medium">BUILDING THE FUTURE</span>
+            <span className="text-accent font-medium">CODE. ARCHITECHTURE. SCALE</span>
           </div>
         </div>
         {/* Desktop Navigation - all right aligned */}

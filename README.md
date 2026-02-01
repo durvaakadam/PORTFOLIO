@@ -1,13 +1,16 @@
+<div align="center">
+
 # Durva Kadam Portfolio
 
-A modern, responsive, and animated portfolio website for Durva Kadam, Full Stack Developer. Built with Next.js, React, Tailwind CSS, and AOS for smooth scroll-based animations.
+### Full Stack Developer | Creative Problem Solver
 
-<div align="center">
-  <a href="https://durvakadam.vercel.app" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
-    <span style="display:inline-block;padding:10px 28px;background:#00C7B7;color:#fff;border-radius:8px;font-size:1.1rem;font-weight:600;letter-spacing:0.5px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:6px;">🚀 Live Demo</span>
-  </a>
-  <br/>
-  <span style="color:#888;font-size:0.98rem;">Check out the deployed portfolio website</span>
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://durvakadam.vercel.app)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+
+*A modern, responsive, and beautifully animated portfolio showcasing projects and skills*
+
 </div>
 
 ### Landing Page
@@ -38,4 +41,19 @@ A modern, responsive, and animated portfolio website for Durva Kadam, Full Stack
 4. **Open in your browser:**
    Visit [http://localhost:3000](http://localhost:3000)
 
-## © All rights reserved.
+
+## License
+
+© All rights reserved. This project and its contents are the intellectual property of Durva Kadam.
+
+**Copyright Notice:** Unauthorized copying, modification, distribution, or use of this project, via any medium, is strictly prohibited without explicit permission from the owner.
+
+
+##  Contact
+
+**Durva Kadam** - Full Stack Developer
+
+- 🌐 Portfolio: [your-portfolio-url.com](https://your-portfolio-url.com)
+- 💼 LinkedIn: [linkedin.com/in/durvakadam](https://linkedin.com/in/durvakadam)
+- 🐙 GitHub: [@yourusername](https://github.com/yourusername)
+- 📧 Email: your.email@example.com
